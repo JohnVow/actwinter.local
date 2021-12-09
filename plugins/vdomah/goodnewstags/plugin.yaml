@@ -1,0 +1,6 @@
+plugin:
+    name: 'vdomah.goodnewstags::lang.plugin.name'
+    description: 'vdomah.goodnewstags::lang.plugin.description'
+    author: Art Gek
+    icon: oc-icon-tags
+    homepage: 'https://github.com/vdomah/oc-goodnewstags-plugin'

@@ -1,0 +1,30 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    name:
+        label: 'site21.fields::lang.field.name'
+        searchable: true
+
+    slug:
+        label: 'site21.fields::lang.field.slug'
+        searchable: true
+
+    type:
+        label: 'site21.fields::lang.field.type'
+        searchable: false
+
+    module:
+        label: 'site21.fields::lang.field.module'
+        searchable: false
+
+    active:
+        label: 'site21.fields::lang.field.active'
+        searchable: false
+
+

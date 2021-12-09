@@ -1,0 +1,31 @@
+1.0.1: First version of Fields
+1.0.2:
+  - Create table with Fields
+  - create_fields_table.php
+1.0.3:
+  - Add module field to table
+  - add_module_field.php
+1.0.4:
+  - Add tab field to table
+  - add_tab_field.
+1.0.5:
+  - Add span, size and comments fields to table
+  - add_span_size_comment.php
+1.0.5.1:
+  - Fixed bug in version.yaml
+1.0.5.2:
+  - Fixed bug in version.yaml
+1.0.6:
+  - Fixed bug with tab in version.yaml
+  - add_tab_field.php
+1.0.7:
+  - Add permission to add
+1.0.7.1:
+  - Error fixing in add_span_size_comment.php
+1.0.8:
+  - Add support for the Translate plugin. Add cached fields
+  - add_settings_field.php
+1.0.9:
+  - Ability to add columns to List widget
+1.0.9.1:
+  - Fixed one error

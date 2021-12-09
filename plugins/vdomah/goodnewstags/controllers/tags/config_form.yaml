@@ -1,0 +1,10 @@
+name: Tags
+form: $/vdomah/goodnewstags/models/tag/fields.yaml
+modelClass: Vdomah\GoodNewsTags\Models\Tag
+defaultRedirect: vdomah/goodnewstags/tags
+create:
+    redirect: 'vdomah/goodnewstags/tags/update/:id'
+    redirectClose: vdomah/goodnewstags/tags
+update:
+    redirect: vdomah/goodnewstags/tags
+    redirectClose: vdomah/goodnewstags/tags

@@ -1,0 +1,15 @@
+tags:
+  label: 'тэга'
+  manage:
+    list: $/vdomah/goodnewstags/models/tag/columns.yaml
+    form: $/vdomah/goodnewstags/models/tag/fields.yaml
+    showSearch: true
+    showSorting: true
+    recordsPerPage: 10
+  view:
+    list: $/vdomah/goodnewstags/models/tag/columns.yaml
+    #recordUrl: vdomah/exchanger/chat/update/:id
+    toolbarButtons: 'create|add|remove|delete'
+    showSearch: true
+    showSorting: true
+    recordsPerPage: 10

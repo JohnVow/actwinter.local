@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'site21.fields::lang.fields.name'
+
+# Model Form Field configuration
+form: $/site21/fields/models/field/fields.yaml
+
+# Model Class name
+modelClass: Site21\Fields\Models\Field
+
+# Default redirect location
+defaultRedirect: site21/fields/fields
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: site21/fields/fields/update/:id
+    redirectClose: site21/fields/fields
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: site21/fields/fields
+    redirectClose: site21/fields/fields
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

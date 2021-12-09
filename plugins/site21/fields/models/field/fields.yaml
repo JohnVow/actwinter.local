@@ -1,0 +1,113 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+      label: ID
+      disabled: true
+      hidden: true
+
+    active:
+      label: 'site21.fields::lang.field.active'
+      span: left
+      type: switch
+      default: 1
+      comment: 'site21.fields::lang.active.comment'
+      on: 'site21.fields::lang.active.on'
+      off: 'site21.fields::lang.active.off'
+
+    settings[translatable]:
+      label: 'site21.fields::lang.field.translatable'
+      span: right
+      type: switch
+      default: 0
+      tab: 'site21.fields::lang.tab.additional'
+      comment: 'site21.fields::lang.comments.translatable'
+      on: 'site21.fields::lang.active.on'
+      off: 'site21.fields::lang.active.off'
+
+    name:
+      label: 'site21.fields::lang.field.name'
+      type: text
+      span: left
+      required: 1
+
+    slug:
+      label: 'site21.fields::lang.field.slug'
+      span: right
+      required: 1
+      preset:
+        field: name
+        type: slug
+      type: text
+
+tabs:
+  fields:
+    type:
+      label: 'site21.fields::lang.field.type'
+      span: left
+      required: 1
+      type: dropdown
+      default: text
+      context:
+          - create
+      tab: 'site21.fields::lang.tab.settings'
+
+
+    module:
+      label: 'site21.fields::lang.field.module'
+      span: right
+      required: 1
+      type: dropdown
+      default: product
+      context:
+        - create
+      tab: 'site21.fields::lang.tab.settings'
+
+    tab:
+      label: 'site21.fields::lang.field.tab'
+      span: auto
+      type: dropdown
+      default: 'site21.fields::lang.fields.tab'
+      dependsOn: module
+      tab: 'site21.fields::lang.tab.settings'
+
+    comment:
+      label: 'site21.fields::lang.field.comment'
+      span: auto
+      tab: 'site21.fields::lang.tab.additional'
+      comment: 'site21.fields::lang.comments.comment'
+
+    span:
+      label: 'site21.fields::lang.field.span'
+      span: auto
+      type: dropdown
+      default: auto
+      tab: 'site21.fields::lang.tab.additional'
+
+    size:
+      label: 'site21.fields::lang.field.size'
+      span: auto
+      type: dropdown
+      default: tiny
+      tab: 'site21.fields::lang.tab.additional'
+      comment: 'site21.fields::lang.comments.size'
+
+    settings[cached]:
+      label: 'site21.fields::lang.field.cached'
+      span: auto
+      type: switch
+      default: 1
+      tab: 'site21.fields::lang.tab.additional'
+      on: 'site21.fields::lang.active.on'
+      off: 'site21.fields::lang.active.off'
+
+    settings[inlist]:
+      label: 'site21.fields::lang.field.inlist'
+      span: auto
+      type: switch
+      default: 0
+      tab: 'site21.fields::lang.tab.additional'
+      on: 'site21.fields::lang.active.on'
+      off: 'site21.fields::lang.active.off'
