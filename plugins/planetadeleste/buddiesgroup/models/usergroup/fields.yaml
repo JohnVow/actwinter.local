@@ -1,0 +1,19 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: planetadeleste.buddiesgroup::lang.group.name
+        span: left
+
+    code:
+        label: planetadeleste.buddiesgroup::lang.group.code
+        comment: planetadeleste.buddiesgroup::lang.group.code_comment
+        span: right
+        preset: name
+
+    description:
+        label: planetadeleste.buddiesgroup::lang.group.description_field
+        type: textarea
+        size: tiny

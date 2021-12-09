@@ -1,0 +1,29 @@
+{% spaceless %}
+
+{# @var obActiveCategory \Lovata\Shopaholic\Classes\Item\CategoryItem #}
+
+{# Get product collection #}
+{% set obProductList = ProductList.make().active().sort(ProductList.getSorting()).category(obActiveCategory.id, true) %}
+{% if obBrand.isNotEmpty() %}
+    {% set obProductList = obProductList.brand(obBrand.id) %}
+{% endif %}
+
+{# Get array with pagination buttons #}
+{% set iPage = Pagination.getPageFromRequest() %}
+
+{# Apply pagination to product collection and get array with product items #}
+{% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
+
+{% if arProductList is not empty %}
+    <ul class="catalog__list list-unstyled flex-wrap row">
+        {% for obProduct in arProductList %}
+            <li class="catalog__item col-lg-4 col-sm-6 col-12">
+                {% partial 'product/product-card/product-card' obProduct=obProduct obActiveCategory=obActiveCategory %}
+            </li>
+        {% endfor %}
+    </ul>
+    {% partial 'navigation/pagination/pagination' iCount=obProductList.count() pagingLabel='catalog-product-list' %}
+{% else %}
+    <div>Products not found</div>
+{% endif %}
+{% endspaceless %}

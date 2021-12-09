@@ -1,0 +1,3 @@
+1.0.0: Initialize plugin. Add vdomah_roles_role_id column to lovata_buddies_users if it's not there yet
+    - buddies_add_role_id_column.php
+1.0.1: "Rename vdomah_roles_role_id column to vdomah_role_id in migration"

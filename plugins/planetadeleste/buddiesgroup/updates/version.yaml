@@ -1,0 +1,16 @@
+1.0.1:
+    - First version of BuddiesGroup
+    - seed_user_groups_table.php
+1.0.2:
+    - Fix saving model
+1.0.3:
+    - Add UserCollection collection
+1.0.4:
+    - Add `groups` attribute to UserItem
+1.0.5:
+    - Add Group collection
+    - Add sort method to UserCollection
+1.0.6:
+    - Add composer.json
+1.0.7:
+    - Add search method to UserCollection

@@ -1,0 +1,39 @@
+1.0.0:
+    - 'Initialize plugin.'
+    - table_create_addition_properties.php
+    - table_create_groups.php
+    - table_create_throttle.php
+    - table_create_users.php
+1.0.1:
+    - '$casts property is replaced with $jsonable property in the User model'
+1.1.0:
+    - "Added the ability to edit the user's properties using the UserPage component on different pages and forms. For example, for pages: personal data, company legal data, etc."
+1.2.0:
+    - 'Added onCheckEmail() method in Registration component. Added the ability to add custom fields to email templates. Added events: "lovata.buddies::mail.registration.template.data", "lovata.buddies::mail.restore.template.data". Added support for multilanguage for sending emails. Settings for sending emails are moved to the Toolbox plugin. Requires Toolbox plugin version 1.6.0 and later.'
+1.3.0:
+    - 'Update logic for new version of CResult class. Add TraitCached to User model. Requires Toolbox plugin version 1.9.1 and later.'
+1.3.1:
+    - 'Add force logout for all users.'
+1.3.2:
+    - 'Adds flag to avoid auto logging in newly registered users. Fixes'
+1.4.0:
+    - 'Refactoring UserItem class. Add annotations for integration with "Orders for Shopaholic" plugin. Refactoring fields and columns files. Requires Toolbox plugin version 1.10.0 and later.'
+1.5.0:
+    - 'Add integration with laravel/socialite package. Add SocialiteLogin component, SocialiteToken model. Added onSocialiteLogin() method to Login component. Added force_login, redirect_on, redirect_page properties to ActivationPage component. Added login_page property to UserPage component. Add possibility to extend query from user model while finding user by credentials.'
+    - table_create_socialite_tokens.php
+1.6.0:
+    - 'Added french language. Thanks for contribution Félix Desjardins.'
+1.7.0:
+    - 'Added supported types of user properties: number, rich editor, single checkbox, switch, balloon selector, tag list, radio.'
+1.7.1:
+    - 'Added SoftDelete trait to User model.'
+1.7.2:
+    - 'Fixed login method, after updating OctoberCMS v1.0.455'
+1.8.0:
+    - 'Added lovata.buddies.before.login, lovata.buddies.after.login, lovata.buddies.logout events'
+1.8.1:
+    - 'Added avatar field to fillable array in User model.'
+1.9.0:
+    - 'Added composer.json to plugin'
+1.9.1:
+    - 'Updated composer.json file'

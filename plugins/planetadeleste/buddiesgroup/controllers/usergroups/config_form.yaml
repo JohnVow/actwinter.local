@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: planetadeleste.buddiesgroup::lang.group.label
+
+# Model Form Field configuration
+form: $/planetadeleste/buddiesgroup/models/usergroup/fields.yaml
+
+# Model Class name
+modelClass: Lovata\Buddies\Models\Group
+
+# Default redirect location
+defaultRedirect: planetadeleste/buddiesgroup/usergroups
+
+# Create page
+create:
+    title: planetadeleste.buddiesgroup::lang.groups.create_title
+    redirect: planetadeleste/buddiesgroup/usergroups/update/:id
+    redirectClose: planetadeleste/buddiesgroup/usergroups
+
+# Update page
+update:
+    title: planetadeleste.buddiesgroup::lang.groups.update_title
+    redirect: planetadeleste/buddiesgroup/usergroups
+    redirectClose: planetadeleste/buddiesgroup/usergroups
+
+# Preview page
+preview:
+    title: planetadeleste.buddiesgroup::lang.groups.preview_title

@@ -1,0 +1,10 @@
+name: 'Bootstrap Theme for Shopaholic'
+description: 'The official free e-commerce theme for Shopaholic based on the most popular CSS framework Bootstrap. The main purpose is to provide a front-end starter kit for your next project.'
+author: LOVATA
+homepage: 'https://lovata.com'
+code: 'bootstrap-shopaholic' #TODO: Change code to shopaholic-bootstrap
+form: config/fields.yaml
+require:
+    - RainLab.Pages
+    - Lovata.Shopaholic
+    - Lovata.Toolbox

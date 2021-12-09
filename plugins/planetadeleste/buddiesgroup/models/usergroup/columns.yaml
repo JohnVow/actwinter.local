@@ -1,0 +1,26 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: planetadeleste.buddiesgroup::lang.group.id
+        invisible: true
+
+    name:
+        label: planetadeleste.buddiesgroup::lang.group.name
+        searchable: true
+
+    code:
+        label: planetadeleste.buddiesgroup::lang.group.code
+
+    created_at:
+        label: planetadeleste.buddiesgroup::lang.group.created_at
+
+    users_count:
+        label: planetadeleste.buddiesgroup::lang.group.users_count
+        relation: users_count
+        valueFrom: count
+        default: 0
+        sortable: false
